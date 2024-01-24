@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de texto</title>
+    <link rel="stylesheet" href="./assets/styles/style.css">
+</head>
+<body>
+    <header class="page-header">
+        <img class="page-header-logo" src="./assets/img/alura-logo.svg" alt="Logo da alura">
+    </header>
+    <main class="main-container">
+        <section class="main-section">
+            <div class="main-section-text">
+                <textarea class="main-section-text-textarea" placeholder="Digite seu texto"></textarea>
+            </div>
+            <div class="main-section-text-alert">
+                <img src="./assets/img/alert-logo.svg" alt="Logo de alerta">
+                <p>Apenas letras minúsculas e sem acento.</p>
+            </div>
+            <div class="main-section-buttons">
+                <input class="btn-criptografar" type="button" value="Criptografar">
+                <input class="btn-descriptografar" type="button" value="Descriptografar">
+            </div>
+        </section>
+        <section class="result-section">
+            <div class="result-section-card">
+                <div class="result-section-message">
+                    <img class="result-section-image" src="./assets/img/procurando-msg.svg" alt="Uma pessoa olhando um objeto com uma lupa">
+                    <h2 class="text-title">Nenhuma mensagem encontrada</h2>
+                    <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+            </div>
+            <div class="result-section-field hidden-result">
+                <div class="result-section-button">
+                    <input class="btn-copy" type="button" value="Copiar">
+                </div>
+                <div class="result-section-text-result">
+                    <p class="text-result"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer">
+        <p>Desenvolvido por <a href="https://github.com/joaovitorlopes" target="_blank">João Vitor Lopes</a></p>
+    </footer>
+</body>
+<script src="./assets/js/script.js"></script>
+</html>
