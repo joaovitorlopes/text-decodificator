@@ -57,9 +57,7 @@ function showResultCard (value) {
 }
 
 elements.copyButton.onclick = () => {
-    navigator.clipboard.writeText(elements.encryptedText).then(() => {
-        alert('Texto copiado para a área de transferência.')
-    });
+    navigator.clipboard.writeText(elements.encryptedText);
 };
 
 elements.encodeButton.onclick = () => {

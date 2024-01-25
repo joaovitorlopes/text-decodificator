@@ -14,12 +14,14 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: var(--main-font);
 }
 
 body {
     box-sizing: border-box;
     background-color: var(--main-color);
     padding: 16px;
+    padding-bottom: 5rem;
     display: flex;
     height: 100vh;
     flex-direction: column;
@@ -162,15 +164,24 @@ input[type=button]:active {
     line-height: 120%;
 }
 
-/* .page-footer {
-    padding: 24px;
+.page-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 16px;
     color: var(--main-color);
     background-color: var(--tertiary-color);
     text-align: center;
     font-family: var(--secondary-font);
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 400;
-} */
+}
+
+.page-footer a {
+    text-decoration: none;
+    color: var(--main-color);
+}
 
 @media only screen and (min-width: 992px) {
     body, .main-container {
